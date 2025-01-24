@@ -1,9 +1,138 @@
+.markazi-text {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rasa-font {
+    font-family: "Rasa", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 html {
     background-color: #F9F7EB;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.left-pad {
+    padding-left: 6vw;
+}
+
+.right-pad {
+    padding-right: 10vw;
+}
+
+.top-pad {
+    padding-top: 10vh;
+}
+
+#navbar_ul, .navbar_options_list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_options_list {
+    position: relative;
+}
+
+li>a {
+    text-decoration: none;
+    color: black;
+}
+
 .header_box {
-    width: 100%;
-    height: 5%;
+    width: 100vw;
+    height: 2.5vh;
     background-color: white;
+    border-color: black;
+}
+
+.navbar_name {
+    font-family: 'DM Serif Text', serif;
+    font-size: 4.5vh;
+}
+
+.navbar_options {
+    font-family: 'Gilda Display';
+    font-size: 3.5vh;
+    padding-left: 2vw;
+}
+
+.dropdown_li {
+    padding-top: 0.5vh;
+    font-family: 'Gilda Display';
+    font-size: 3vh;
+    text-align: right;
+}
+
+.dropdown_li:hover {
+    text-decoration: underline;
+}
+
+.navbar_options:hover {
+    text-decoration: underline;
+}
+
+#homepage_intro {
+    display: flex;
+    position: relative;
+}
+
+#intro_para {
+    width: 27vw;
+    font-size: 3.25vh;
+    text-align: justify;
+    font-weight: 400;
+    position: absolute;
+    right: 5vw;
+    top: 10vh;
+}
+
+#intro_pfp {
+    position: absolute;
+    left: 15vw;
+    top: 15vh;
+}
+
+#dropdown_writing {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+
+#writing_menu:hover #dropdown_writing {
+    display: block;
+    background: white;
+}
+
+
+#dropdown_writing:hover {
+    display: block;
+}
+
+#writing_menu:hover {
+    background: white;
+}
+
+
+#intro_pfp {
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+}
+
+.sticky {
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    top: 0;
 }

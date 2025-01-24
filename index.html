@@ -2,8 +2,47 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css?family=DM Serif Text' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Gilda Display' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
     </head>
-    <body class="body">
+    <body>
     <div class="header_box"></div>
+    <nav id="navbar">
+        <ul id="navbar_ul" class="left-pad right-pad">
+            <li>
+                <a class="navbar_name">Aung Swan Oo</a>
+            </li>
+            <li>
+                <ul class="navbar_options_list">
+                    <li>
+                        <a href="#" class="navbar_options">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar_options">About</a>
+                    </li>
+                    <li id="writing_menu">
+                        <a href="#" class="navbar_options">Writing</a>
+                        <ul id="dropdown_writing">
+                            <li class="dropdown_li"><a href="#">Business</a></li>
+                            <li class="dropdown_li"><a href="#">Politics</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar_options">Projects</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="homepage_intro" class="right-pad left-pad">
+        <div id="intro_img" class="left-pad top-pad">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQGXLtC3d9NwMw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723216400639?e=1743033600&v=beta&t=Zm-mZ2oPM0aMCiUzVXSlIkoV2XkDYLzNwTapsYVmBsY" id="intro_pfp">
+        </div>
+        <p id="intro_para" class="rasa-font right-pad top-pad">Hello, I'm Aung Swan Oo, and welcome to my collection. Here, you can find more about myself and my interests. Whether they are case studies of businesses I'm interested in, my opinions on politics, or recent projects I've been working on, feel free to browse through and look at them!</p>
+    </div>
     </body>
 </html>
