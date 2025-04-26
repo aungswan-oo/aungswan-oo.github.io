@@ -48,6 +48,20 @@ body {
     font-size: x-large;
 }
 
+.portfolio_section_items_desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio_section_item {
+    padding-left: 1%;
+    padding-right: 1%;
+    align-items: center;
+    border: black;
+    border-width: 10%;
+}
+
 .header_texts {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: inline-block;
@@ -149,6 +163,22 @@ a {
     background-color: white;
 }
 
+.section_subheader {
+    font-size: xx-large;
+}
+
+.box {
+    flex: 1;
+    margin: 15px;
+    height: 40vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+
+.portfolio_section_header {
+    text-align: center;
+}
+
 @media (max-width: 600px) {
     #header {
         padding-left: 20px;
@@ -194,4 +224,13 @@ a {
         display: block;
     }
 
+    .section_subheader {
+        font-size: x-large;
+    }
+
+    .box {
+        margin-bottom: 30px;
+    }
+
+    
 }
