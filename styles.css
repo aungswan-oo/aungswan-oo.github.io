@@ -50,7 +50,7 @@ body {
 
 .portfolio_section_items_desktop {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
 }
 
@@ -120,6 +120,10 @@ a {
     margin: auto;
 }
 
+#hide_element {
+    display: none;
+}
+
 .center_text {
     text-align: center;
 }
@@ -137,8 +141,9 @@ a {
 }
 
 .section_small_text {
-    font-family: Roboto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
+    font-weight: 500;
 }
 
 .desktop_only {
@@ -155,10 +160,6 @@ a {
     align-items: center;
 }
 
-#contact_icons_and_links_desktop {
-    width: 65%;
-}
-
 #contact_section {
     background-color: white;
 }
@@ -172,11 +173,35 @@ a {
     margin: 15px;
     height: 40vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 20%;
     background-color: white;
 }
 
+.image-box {
+    padding-top: 10px;
+    width: 100%;      /* Or any size you want */
+    overflow: hidden;
+    position: relative; /* Important for absolute positioning if needed */
+    border: 1px solid #000000;
+  }
+
+
+.portfolio_section_image {
+    width: 100%;
+    height: 40%;
+    object-fit: cover; /* or contain depending on your goal */
+    display: block; 
+}
+
 .portfolio_section_header {
-    text-align: center;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+#contact_section_text {
+    max-width: 60%;
 }
 
 @media (max-width: 600px) {
@@ -230,7 +255,11 @@ a {
 
     .box {
         margin-bottom: 30px;
+        max-width: 100%;
     }
 
-    
+    #contact_section_text {
+        max-width: 100%;
+        padding-bottom: 10%;
+    }
 }
