@@ -181,6 +181,8 @@ a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
     transition: color 0.3s ease;
+    padding: 10px;
+    border-radius: 30px;
   }
   
 .contact-icon {
@@ -190,7 +192,9 @@ a {
   }
   
 .contact-item:hover {
-    color: #0077b5; /* LinkedIn blue for hover, or any color */
+    color: black; /* LinkedIn blue for hover, or any color */
+    background-color: #f7f3Dd;
+    transform: scale(1.1);
   }
   
 .contact-item:hover .contact-icon {
