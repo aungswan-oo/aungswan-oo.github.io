@@ -171,6 +171,11 @@ a {
     gap: 1rem; /* space between items */
     margin-top: 2rem;
   }
+
+#contact_icons_and_links_mobile {
+    display: flex;
+    flex-direction: column;
+  }
   
 .contact-item {
     display: flex;
@@ -194,7 +199,7 @@ a {
 .contact-item:hover {
     color: black; /* LinkedIn blue for hover, or any color */
     background-color: #f7f3Dd;
-    transform: scale(1.1);
+    transform: scale(1.1)
   }
   
 .contact-item:hover .contact-icon {
@@ -301,6 +306,7 @@ a {
 
     #contact_section_text {
         max-width: 100%;
-        padding-bottom: 10%;
+        padding: 5%;
+        text-align: left;
     }
 }
